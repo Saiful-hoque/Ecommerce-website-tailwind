@@ -58,17 +58,21 @@
       </div>
 
       <!-- Mobile nav menu -->
-      <div class="peer-checked:block hidden md:hidden pb-4">
-        <nav class="flex flex-col gap-2 px-2 pb-4">
-          <a href="#home" class="block px-3 py-2 rounded text-gray-200 hover:bg-gray-800">Home</a>
-          <a href="#products" class="block px-3 py-2 rounded text-gray-200 hover:bg-gray-800">Products</a>
-          <a href="#reviews" class="block px-3 py-2 rounded text-gray-200 hover:bg-gray-800">Reviews</a>
-          <a href="#contact" class="block px-3 py-2 rounded text-gray-200 hover:bg-gray-800">Contact</a>
-          <a href="#newsletter" class="block px-3 py-2 rounded text-white bg-blue-700 hover:bg-blue-600 text-center">Subscribe</a>
-        </nav>
-      </div>
-    </div>
-  </header>
+      <!-- Mobile nav menu -->
+<input id="nav-toggle" type="checkbox" class="hidden peer" />
+<label for="nav-toggle" class="cursor-pointer md:hidden p-2 text-gray-200 hover:text-white hover:bg-gray-800">
+  ☰
+</label>
+
+<div class="hidden peer-checked:block md:hidden pb-4">
+  <nav class="flex flex-col gap-2 px-2 pb-4">
+    <a href="#home" class="block px-3 py-2 rounded text-gray-200 hover:bg-gray-800">Home</a>
+    <a href="#products" class="block px-3 py-2 rounded text-gray-200 hover:bg-gray-800">Products</a>
+    <a href="#reviews" class="block px-3 py-2 rounded text-gray-200 hover:bg-gray-800">Reviews</a>
+    <a href="#contact" class="block px-3 py-2 rounded text-gray-200 hover:bg-gray-800">Contact</a>
+    <a href="#newsletter" class="block px-3 py-2 rounded text-white bg-blue-700 hover:bg-blue-600 text-center">Subscribe</a>
+  </nav>
+</div>
 
   <main id="home" class="mt-8">
     <!-- Hero -->
