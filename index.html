@@ -3,83 +3,33 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title> Navy E-Shop </title>
+  <title>Navy E-Shop</title>
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Optional: enable Tailwind container center (already default in later versions) -->
   <style>
-    /* tiny helper to smooth image rendering */
     img { -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+    html { scroll-behavior: smooth; }
   </style>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
-
-  <!-- Header / Navbar -->
-  <header class="sticky top-0 z-40 bg-gradient-to-r from-gray-900 via-slate-900 to-blue-950 border-b border-gray-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <div class="flex items-center gap-3">
-          <a href="#" class="flex items-center gap-3">
-            <!-- Logo -->
-            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-800 to-indigo-700 flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12h18M3 6h18M3 18h18" />
-              </svg>
-            </div>
-            <span class="text-lg font-bold tracking-tight text-white">Navy Store</span>
-          </a>
-        </div>
-
-        <!-- Desktop nav -->
-        <nav class="hidden md:flex items-center space-x-6">
-          <a href="#home" class="text-gray-200 hover:text-white">Home</a>
-          <a href="#products" class="text-gray-200 hover:text-white">Products</a>
-          <a href="#reviews" class="text-gray-200 hover:text-white">Reviews</a>
-          <a href="#contact" class="text-gray-200 hover:text-white">Contact</a>
-        </nav>
-
-        <!-- Right side -->
-        <div class="flex items-center gap-3">
-          <a href="#newsletter" class="hidden md:inline-block bg-blue-700 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium">Subscribe</a>
-
-          <!-- Mobile menu button using checkbox hack -->
-          <div class="md:hidden">
-            <input id="nav-toggle" type="checkbox" class="peer sr-only" />
-            <label for="nav-toggle" class="cursor-pointer p-2 rounded-md inline-flex items-center justify-center text-gray-200 hover:text-white hover:bg-gray-800">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path class="peer-checked:hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                <path class="hidden peer-checked:inline" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile nav menu -->
-      <!-- Mobile nav menu -->
-<input id="nav-toggle" type="checkbox" class="hidden peer" />
-<label for="nav-toggle" class="cursor-pointer md:hidden p-2 text-gray-200 hover:text-white hover:bg-gray-800">
-  ☰
-</label>
-
-<div class="hidden peer-checked:block md:hidden pb-4">
-  <nav class="flex flex-col gap-2 px-2 pb-4">
-    <a href="#home" class="block px-3 py-2 rounded text-gray-200 hover:bg-gray-800">Home</a>
-    <a href="#products" class="block px-3 py-2 rounded text-gray-200 hover:bg-gray-800">Products</a>
-    <a href="#reviews" class="block px-3 py-2 rounded text-gray-200 hover:bg-gray-800">Reviews</a>
-    <a href="#contact" class="block px-3 py-2 rounded text-gray-200 hover:bg-gray-800">Contact</a>
-    <a href="#newsletter" class="block px-3 py-2 rounded text-white bg-blue-700 hover:bg-blue-600 text-center">Subscribe</a>
+  <!-- Top Menu -->
+  <nav class="w-full bg-gray-800 text-white sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 flex items-center justify-center gap-6 h-12">
+      <a href="#home" class="hover:text-blue-400">Home</a>
+      <a href="#products" class="hover:text-blue-400">Products</a>
+      <a href="#reviews" class="hover:text-blue-400">Reviews</a>
+      <a href="#contact" class="hover:text-blue-400">Contact</a>
+    </div>
   </nav>
-</div>
 
   <main id="home" class="mt-8">
     <!-- Hero -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="bg-gradient-to-r from-blue-950 via-slate-900 to-gray-900 rounded-2xl p-8 md:p-16 flex flex-col md:flex-row items-center gap-8">
         <div class="flex-1">
-          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-white mb-4"> নেভি শপ — স্টাইলিশ প্রোডাক্টস</h1>
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-white mb-4">নেভি শপ — স্টাইলিশ প্রোডাক্টস</h1>
           <p class="text-gray-300 mb-6 max-w-xl">আমাদের কালেকশনে আছে শু, ব্যাগ, ইলেকট্রনিকস ও গেমিং গ্যাজেট — আধুনিক, টেকসই ও বাজেট-ফ্রেন্ডলি। এখনই ব্রাউজ করো।</p>
           <div class="flex flex-wrap gap-3">
             <a href="#products" class="inline-block bg-blue-700 hover:bg-blue-600 text-white px-5 py-3 rounded-lg font-semibold">Shop Now</a>
@@ -87,28 +37,25 @@
           </div>
         </div>
         <div class="flex-1">
-          <!-- Hero image (replace with your image) -->
           <img src="image/logo.jpg" alt="hero" class="w-full rounded-xl shadow-2xl object-cover max-h-80 mx-auto" />
         </div>
       </div>
     </section>
 
     <div class="flex items-center justify-center py-4 md:py-6 flex-wrap gap-3">
-  <button class="text-white bg-transparent border border-blue-700 hover:bg-blue-700 hover:text-white rounded-full px-5 py-2.5 text-sm font-medium">All categories</button>
-  <button class="text-gray-200 bg-gray-800 hover:bg-slate-800 border border-transparent rounded-full px-5 py-2.5 text-sm font-medium">Shoes</button>
-  <button class="text-gray-200 bg-gray-800 hover:bg-slate-800 border border-transparent rounded-full px-5 py-2.5 text-sm font-medium">Bags</button>
-  <button class="text-gray-200 bg-gray-800 hover:bg-slate-800 border border-transparent rounded-full px-5 py-2.5 text-sm font-medium">Electronics</button>
-  <button class="text-gray-200 bg-gray-800 hover:bg-slate-800 border border-transparent rounded-full px-5 py-2.5 text-sm font-medium">Gaming</button>
-</div>
+      <button class="text-white bg-transparent border border-blue-700 hover:bg-blue-700 hover:text-white rounded-full px-5 py-2.5 text-sm font-medium">All categories</button>
+      <button class="text-gray-200 bg-gray-800 hover:bg-slate-800 border border-transparent rounded-full px-5 py-2.5 text-sm font-medium">Shoes</button>
+      <button class="text-gray-200 bg-gray-800 hover:bg-slate-800 border border-transparent rounded-full px-5 py-2.5 text-sm font-medium">Bags</button>
+      <button class="text-gray-200 bg-gray-800 hover:bg-slate-800 border border-transparent rounded-full px-5 py-2.5 text-sm font-medium">Electronics</button>
+      <button class="text-gray-200 bg-gray-800 hover:bg-slate-800 border border-transparent rounded-full px-5 py-2.5 text-sm font-medium">Gaming</button>
+    </div>
 
-
-<!-- Products -->
-<!-- Products grid -->
-<section id="products" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
-  <h2 class="text-2xl font-bold text-white mb-6">Our Products</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-    <article class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-200">
+    <!-- Products -->
+    <section id="products" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+      <h2 class="text-2xl font-bold text-white mb-6">Our Products</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Product cards here -->
+         <article class="bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-200">
       <img class="w-full h-48 object-cover" src="image/show.jpg" alt="Product 1">
       <div class="p-4">
         <h3 class="text-lg font-semibold text-white">Classic Runner Shoes</h3>
@@ -218,57 +165,14 @@
 
   </div>
 </section>
+      </div>
+    </section>
 
-<!-- Smooth scroll -->
-<style>
-  html { scroll-behavior: smooth; }
-</style>
     <!-- Reviews -->
     <section id="reviews" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
       <h2 class="text-2xl font-bold text-white mb-6">Customer Reviews</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <blockquote class="bg-gray-800 p-6 rounded-lg shadow">
-          <div class="flex items-center gap-4">
-            <img src="image/review 4.jpg" alt="avatar" class="w-12 h-12 rounded-full object-cover">
-            <div>
-              <p class="font-semibold text-white">Rafiq Hossain.</p>
-              <div class="text-yellow-400">★★★★★</div>
-            </div>
-          </div>
-          <p class="text-gray-300 mt-4">প্রোডাক্টের কোয়ালিটি দারুণ। ডেলিভারি দ্রুত ছিল। দাম সাশ্রয়ী—আমি সন্তুষ্ট।</p>
-        </blockquote>
-
-        <blockquote class="bg-gray-800 p-6 rounded-lg shadow">
-          <div class="flex items-center gap-4">
-            <img src="image/reveiw 3.jpg" alt="avatar" class="w-12 h-12 rounded-full object-cover">
-            <div>
-              <p class="font-semibold text-white">Karim Ahmed</p>
-              <div class="text-yellow-400">★★★★☆</div>
-            </div>
-          </div>
-          <p class="text-gray-300 mt-4">কাস্টমার সার্ভিস ভালো ছিল। প্যাকেজিং ভালো। শপিং এক্সপেরিয়েন্স চমৎকার।</p>
-        </blockquote>
-        <blockquote class="bg-gray-800 p-6 rounded-lg shadow">
-          <div class="flex items-center gap-4">
-            <img src="image/review 2.jpeg" alt="avatar" class="w-12 h-12 rounded-full object-cover">
-            <div>
-              <p class="font-semibold text-white">Imtiaz Hasan</p>
-              <div class="text-yellow-400">★★★★☆</div>
-            </div>
-          </div>
-          <p class="text-gray-300 mt-4">শপিং অভিজ্ঞতা অসাধারণ! কাস্টমার সার্ভিস দ্রুত ও বন্ধুভাবাপন্ন ছিল।।</p>
-        </blockquote>
-
-        <blockquote class="bg-gray-800 p-6 rounded-lg shadow">
-          <div class="flex items-center gap-4">
-            <img src="image/review 1.jpeg" alt="avatar" class="w-12 h-12 rounded-full object-cover">
-            <div>
-              <p class="font-semibold text-white">Sadia Rahman</p>
-              <div class="text-yellow-400">★★★★★</div>
-            </div>
-          </div>
-          <p class="text-gray-300 mt-4">প্রোডাক্ট বর্ণনা ঠিক ছিল এবং মানানসই। দ্রুত রিটার্ন পলিসি ভালো লেগেছে।</p>
-        </blockquote>
+        <!-- Reviews cards here -->
       </div>
     </section>
 
@@ -321,31 +225,32 @@
       <div class="flex flex-col md:flex-row items-center justify-between gap-4">
         <p class="text-gray-400">© <span id="year"></span> NavyStore. All rights reserved.</p>
         <div class="flex items-center gap-4">
-          <a href="#" class="text-gray-300 hover:text-white">Home</a>
           <a href="#products" class="text-gray-300 hover:text-white">Products</a>
           <a href="#contact" class="text-gray-300 hover:text-white">Contact</a>
         </div>
         <div class="flex items-center gap-3">
-  <a href="https://www.facebook.com/mohammadsaiful.hoque.16/" target="_blank" class="p-2 rounded-full bg-gray-800 hover:bg-blue-700">
-    <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.99H7.898v-2.888h2.54V9.845c0-2.506 1.492-3.89 3.777-3.89 
-      1.094 0 2.238.195 2.238.195v2.465h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.888h-2.33v6.99C18.343 21.128 
-      22 16.991 22 12z"/>
-    </svg>
-  </a>
+          <a href="https://www.facebook.com/mohammadsaiful.hoque.16/" target="_blank" class="p-2 rounded-full bg-gray-800 hover:bg-blue-700">
+            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.99H7.898v-2.888h2.54V9.845c0-2.506 1.492-3.89 3.777-3.89 
+              1.094 0 2.238.195 2.238.195v2.465h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.888h-2.33v6.99C18.343 21.128 
+              22 16.991 22 12z"/>
+            </svg>
+          </a>
           <a href="https://twitter.com" target="_blank" class="p-2 rounded-full bg-gray-800 hover:bg-blue-700">
-    <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9.04 9.04 0 0 1-2.88 1.1A4.52 4.52 0 0 0 12.06 
-      5c0 .36.04.71.12 1.05A12.8 12.8 0 0 1 1.67 1.15 4.48 4.48 0 0 0 3.1 7.72a4.48 4.48 0 0 1-2.05-.56v.06A4.52 
-      4.52 0 0 0 4.5 12.9a4.5 4.5 0 0 1-2.04.08 4.52 4.52 0 0 0 4.22 3.13A9.06 9.06 0 0 1 1 19.54 12.8 12.8 
-      0 0 0 7.29 21c8.34 0 12.91-6.91 12.91-12.91 0-.2 0-.39-.02-.58A9.22 9.22 0 0 0 23 3z"/>
-    </svg>
-  </a>
-</div>
-  <div class="flex items-center gap-3">
-  <!-- tiny script to set footer year (optional, safe minimal JS) -->
-  <script>
-    try { document.getElementById('year').textContent = new Date().getFullYear(); } catch(e) {}
-  </script>
+            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9.04 9.04 0 0 1-2.88 1.1A4.52 4.52 0 0 0 12.06 
+              5c0 .36.04.71.12 1.05A12.8 12.8 0 0 1 1.67 1.15 4.48 4.48 0 0 0 3.1 7.72a4.48 4.48 0 0 1-2.05-.56v.06A4.52 
+              4.52 0 0 0 4.5 12.9a4.5 4.5 0 0 1-2.04.08 4.52 4.52 0 0 0 4.22 3.13A9.06 9.06 0 0 1 1 19.54 12.8 12.8 
+              0 0 0 7.29 21c8.34 0 12.91-6.91 12.91-12.91 0-.2 0-.39-.02-.58A9.22 9.22 0 0 0 23 3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <script>
+        try { document.getElementById('year').textContent = new Date().getFullYear(); } catch(e) {}
+      </script>
+    </div>
+  </footer>
+
 </body>
 </html>
