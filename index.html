@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Navy E-Shop</title>
+  <title>NAVY E SHOP</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     img { -webkit-backface-visibility: hidden; backface-visibility: hidden; }
@@ -53,6 +53,62 @@
       });
     </script>
   </nav>
+
+ <!-- Hero Section Slider (3 slides, smooth & faster) -->
+<section id="home" class="relative w-full h-[500px] overflow-hidden">
+  <!-- Slides container -->
+  <div class="absolute inset-0 flex animate-slide">
+    <!-- Slide 1 -->
+    <div class="w-full flex-shrink-0 h-full bg-cover bg-center" style="background-image:url('image/slide.jpg');">
+      <div class="bg-black/50 h-full flex flex-col justify-center items-center text-center text-white p-6">
+        <h1 class="text-3xl md:text-5xl font-bold mb-4">নেভি স্টোরে স্বাগতম</h1>
+        <p class="mb-4">সেরা প্রোডাক্ট, সেরা দামে</p>
+        <div class="flex gap-3 flex-wrap justify-center">
+          <a href="#products" class="bg-blue-600 hover:bg-blue-500 px-6 py-2 rounded">Shop Now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="w-full flex-shrink-0 h-full bg-cover bg-center" style="background-image: url('image/silde\ 2.jpg');">
+      <div class="bg-black/50 h-full flex flex-col justify-center items-center text-center text-white p-6">
+        <h1 class="text-3xl md:text-5xl font-bold mb-4">বিশেষ অফার</h1>
+        <p class="mb-4">প্রতিসপ্তাহ আকর্ষণীয় ছাড়</p>
+        <div class="flex gap-3 flex-wrap justify-center">
+          <a href="#newsletter" class="bg-green-600 hover:bg-green-500 px-6 py-2 rounded">Subscribe</a>
+        </div>
+      </div>
+    </div>
+    <!-- Slide 3 -->
+    <div class="w-full flex-shrink-0 h-full bg-cover bg-center" style="background-image: url('image/slide\ 3.jpg');">
+      <div class="bg-black/50 h-full flex flex-col justify-center items-center text-center text-white p-6">
+        <h1 class="text-3xl md:text-5xl font-bold mb-4">নতুন প্রোডাক্ট শীঘ্রই আসছে</h1>
+        <p class="mb-4">আমাদের সংগ্রহ একবার দেখুন</p>
+        <div class="flex gap-3 flex-wrap justify-center">
+          <a href="#about" class="bg-red-600 hover:bg-red-500 px-6 py-2 rounded">আসন্ন প্রোডাক্টস</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS for Slider -->
+<style>
+  @keyframes slide {
+    0%, 20% { transform: translateX(0%); }
+    33%, 53% { transform: translateX(-100%); }
+    66%, 86% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+  }
+  .animate-slide {
+    animation: slide 9s infinite;
+  }
+
+  /* Smooth scroll for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
 
   <!-- Hero Section -->
   <main id="home" class="mt-8">
